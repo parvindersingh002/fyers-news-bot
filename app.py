@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 client_id = "KPDSVZIUOM-100@APP"  # apna client id yahan likho
 secret_key = "3LT3278EP5"          # apna secret key yahan likho
-redirect_uri = "https://fyers-news-bot.onrender.com/callback/callback"  # apna HTTPS ngrok ya deployed URL
+redirect_uri = "https://fyers-news-bot.onrender.com/callback"  # apna HTTPS ngrok ya deployed URL
 
 @app.route('/')
 def home():
