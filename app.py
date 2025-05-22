@@ -3,9 +3,9 @@ import requests
 
 app = Flask(__name__)
 
-client_id = "KPDSVZIUOM-100@APP"  # Tuhada client id (change karo apne hisab naal)
-secret_key = "3LT3278EP5"         # Tuhada secret key
-redirect_uri = "https://fyers-auth-bot.onrender.com/callback"  # Apna Render URL
+client_id = "KPDSVZIUOM-100@APP"
+secret_key = "3LT3278EP5"
+redirect_uri = "https://fyers-news-bot.onrender.com/callback"
 
 @app.route('/')
 def login():
@@ -39,6 +39,4 @@ def callback():
     return f"Access Token Response:<br>{data}"
 
 if __name__ == '__main__':
-    # host='0.0.0.0' zaroori hai taaki Render vich serve ho sake
-    # port=10000 default Render port hai
     app.run(host='0.0.0.0', port=10000)
